@@ -1,0 +1,10 @@
+L = [1,2,3,4]
+target = 5
+s = 0
+A = set([0])
+for i in L:
+    s += i
+    if s - target in A:
+        print("Found")
+        break
+    A.add(s)
